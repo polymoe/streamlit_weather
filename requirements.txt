@@ -1,2 +1,2 @@
 seaborn
-statsmodels.api
+statsmodels
