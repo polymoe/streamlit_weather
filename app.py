@@ -378,15 +378,15 @@ def models():
 
   with st.expander("Voting"):
     st.write("L'algorithme d'ensemble learning \"Voting\" a été entraîné avec les modèles essayés ci-dessus. Les meilleurs hyperparamètres ont été retenus. Nous avons ainsi utilisé la régression logistique, les arbres de décision, la random forest et le KNN. Il en ressort des résultats au moins aussi bons que le meilleur des modèles, sans toutefois le surpasser.")   
-    st.image('Voting.PNG')
+    st.image('Voting.png')
 
   with st.expander("Stacking"):
     st.write("Pour cet algorithme d'ensemble learning de \"Stacking\", la façon de procéder est la même que le voting ci-dessus. Nous obtenons également des résultats au moins aussi bons que le meilleur des modèles, sans toutefois le surpasser.")   
-    st.image('Stacking.PNG')
+    st.image('Stacking.png')
 
   with st.expander("Deep learning"):
     st.write("Nous avons pour terminer entraîné un modèle de type \"multi-layer perceptron\". Les meilleurs résultats ont été obtenus avec une architecture à 3 couches. Les 2 premières comportent 32 neurones quand la dernière en compte 2. L'optimizer est Adam et le learning rate défini à 0.001. La fonction de perte utilisée est binary_crossentropy. Nous avons entraîné le modèle sur une taille de batch de 10 et 40 epochs.")   
-    st.image('Deep_Learning.PNG')
+    st.image('Deep_Learning.png')
     st.write("Un callback de type ReduceLROnPlateau a été mis en place et nous constatons bien son action sur la courbe de train_loss")
     st.write("Nous obtenons ici les meilleurs résultats tous modèles confondus avec une accuracy sur le dataset de validation de plus de 0.835!")
 
